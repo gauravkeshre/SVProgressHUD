@@ -67,13 +67,6 @@ static const CGFloat SVProgressHUDDefaultAnimationDuration = 0.15;
 
 - (void)overlayViewDidReceiveTouchEvent:(id)sender forEvent:(UIEvent*)event;
 
-- (void)showProgress:(float)progress status:(NSString*)status;
-- (void)showImage:(UIImage*)image status:(NSString*)status duration:(NSTimeInterval)duration;
-- (void)showStatus:(NSString*)status;
-
-- (void)dismiss;
-- (void)dismissWithDelay:(NSTimeInterval)delay completion:(SVProgressHUDDismissCompletion)completion;
-
 - (UIView*)indefiniteAnimatedView;
 - (SVProgressAnimatedView*)ringView;
 - (SVProgressAnimatedView*)backgroundRingView;

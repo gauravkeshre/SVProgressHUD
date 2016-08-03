@@ -134,5 +134,14 @@ typedef void (^SVProgressHUDDismissCompletion)(void);
 
 + (NSTimeInterval)displayDurationForString:(NSString*)string;
 
+#pragma mark - Additions for explicit instnace Methods
+- (void)showProgress:(float)progress status:(NSString*)status;
+- (void)showImage:(UIImage*)image status:(NSString*)status duration:(NSTimeInterval)duration;
+- (void)showStatus:(NSString*)status;
+
+- (void)dismiss;
+- (void)dismissWithDelay:(NSTimeInterval)delay completion:(SVProgressHUDDismissCompletion)completion;
+
+
 @end
 
